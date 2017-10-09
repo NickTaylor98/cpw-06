@@ -8,6 +8,7 @@ const createcom = require('./createComment.js');
 const deletecom = require('./deleteComment.js');
 const read = require('./read.js');
 const readAll = require('./readAll.js');
+const log = require('./log.js');
 
 const hostname = '127.0.0.1';
 const port = 3000;
@@ -18,7 +19,8 @@ const handlers = {
     '/api/articles/delete': del.delete,
     '/api/articles/update': update.update,
     '/api/comments/create': createcom.createComment,
-    '/api/comments/delete': deletecom.deleteComment
+    '/api/comments/delete': deletecom.deleteComment,
+    '/api/logs' : log.logs
 };
 const JSONFile = 'articles.json';
 let articles = require('./'+JSONFile);

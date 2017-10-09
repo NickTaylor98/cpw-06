@@ -1,5 +1,0 @@
-	6.10.2017 18:28:1
-URL: /api/articles/readall
-Request:
-{"sortField":"date","sortOrder":"desc"}
-----------------------------------

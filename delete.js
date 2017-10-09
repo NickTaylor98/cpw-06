@@ -1,5 +1,5 @@
 const log = require('./log.js');
-const file = require('fs').createWriteStream('logfile.log');
+const file = 'logfile.json';
 let articles = require('./articles.json');
 const ErrorObject = { code: 400, message: 'Request Invalid' };
 
